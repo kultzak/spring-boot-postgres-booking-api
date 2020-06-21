@@ -1,4 +1,4 @@
-package com.example.postgresdemo.model;
+package com.example.bookingapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedDate;

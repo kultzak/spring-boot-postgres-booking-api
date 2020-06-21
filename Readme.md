@@ -75,9 +75,9 @@ http://localhost:8080/api/hospedes/q/?phone=789 111
 ```bash
 POST http://localhost:8080/api/checkIns/create
 {
-    "customerId": "58efe3fb-cdf8-413a-a6b6-ae67c569ffc1",
-    "inDate": "2017-09-10T13:10:19.866",
-    "outDate": "2018-10-11T19:17:19.866",
+    "customerId": "1",
+    "inDate": "2020-06-21T19:10:19.866",
+    "outDate": "2020-07-25T12:17:19.866",
     "additional": true
 }
 ```

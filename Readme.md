@@ -10,8 +10,8 @@ git clone https://github.com/kultzak/spring-boot-postgres-booking-api.git
 
 **2. Configurar o PostgreSQL**
 
-Criar um banco de dados chamado `hotel_ooking`. Abrir
-`src/main/resources/application.properties` e modificar o usuário e senha para o
+Criar um banco de dados chamado `hotel_booking`. Abrir
+`src/main/resources/application.properties` e modificar para o usuário e senha
 utilizado pelo banco em sua instalação do PostgreSQL.
 
 **3. Rodar a API**
@@ -30,6 +30,7 @@ java -jar target/postgres-demo-0.0.1-SNAPSHOT.jar
 ```
 
 **3. Utilização da API**
+-----------------------------------------
 
 ### Inserir hóspede:
 ```bash
@@ -68,4 +69,25 @@ GET http://localhost:8080/api/hospedes/
 http://localhost:8080/api/hospedes/q/?name=fulano
 http://localhost:8080/api/hospedes/q/?document=00001
 http://localhost:8080/api/hospedes/q/?phone=789 111
+```
+
+### Criar check in:
+```bash
+POST http://localhost:8080/api/checkIns/create
+{
+    "customerId": "58efe3fb-cdf8-413a-a6b6-ae67c569ffc1",
+    "inDate": "2017-09-10T13:10:19.866",
+    "outDate": "2018-10-11T19:17:19.866",
+    "additional": true
+}
+```
+
+### Buscar clientes atualmente hospedados:
+```bash
+GET http://localhost:8080/api/checkIns/hosted-hospedes/{pagina}/{itens por pagina}
+```
+
+### Buscar clientes não mais hospedados:
+```bash
+GET http://localhost:8080/api/checkIns/past-hosted-hospedes/{pagina}/{itens por pagina}
 ```

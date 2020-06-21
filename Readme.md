@@ -26,11 +26,11 @@ ou o comando seguinte para empacotar a aplicação como JAR e rodar.
 
 ```bash
 mvn clean package
-java -jar target/postgres-demo-0.0.1-SNAPSHOT.jar
+java -jar target/booking-system-0.0.1-SNAPSHOT.jar
 ```
+--------------------------------------------
 
 **3. Utilização da API**
------------------------------------------
 
 ### Inserir hóspede:
 ```bash

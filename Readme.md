@@ -1,32 +1,27 @@
-## Spring Boot, PostgreSQL, JPA, Hibernate REST API Demo
+## REST API para cadastro de hospedes e checkins com Spring Boot, PostgreSQL, JPA, Hibernate.
 
-## Tutorial
+## Para rodar localmente
 
-Check out the complete tutorial on the CalliCoder blog -
-
-[Spring Boot, PostgreSQL, JPA, Hibernate RESTful CRUD API Example](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
-
-## Steps to Setup
-
-**1. Clone the repository**
+**1. Clonar o repositório**
 
 ```bash
 git clone https://github.com/callicoder/spring-boot-postgresql-jpa-hibernate-rest-api-demo.git
 ```
 
-**2. Configure PostgreSQL**
+**2. Configurar o PostgreSQL**
 
-First, create a database named `postgres_demo`. Then, open `src/main/resources/application.properties` file and change the spring datasource username and password as per your PostgreSQL installation.
+Criar um banco de dados chamado `hotel_ooking`. Abrir `src/main/resources/application.properties` e modificar o usuário 
+e senha para o utilizado pelo banco em sua instalação do PostgreSQL.
 
-**3. Run the app**
+**3. Rodar a API**
 
-Type the following command from the root directory of the project to run it -
+Digitar o seguinte comando na raiz do projeto:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Alternatively, you can package the application in the form of a JAR file and then run it like so -
+ou o comando seguinte para empacotar a aplicação como JAR e rodar.
 
 ```bash
 mvn clean package

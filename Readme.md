@@ -75,9 +75,9 @@ http://localhost:8080/api/hospedes/q/?phone=789 111
 ```bash
 POST http://localhost:8080/api/checkIns/create
 {
-    "customerId": "1",
-    "inDate": "2020-06-21T19:10:19.866",
-    "outDate": "2020-07-25T12:17:19.866",
+    "hospedeId": "52",
+    "chechInDate": "2020-06-21T19:10:19.866",
+    "checkOutDate": "2020-07-25T12:17:19.866",
     "additional": true
 }
 ```
